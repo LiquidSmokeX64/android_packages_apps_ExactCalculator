@@ -30,6 +30,9 @@ LOCAL_STATIC_JAVA_LIBRARIES := cr android-support-v4
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
